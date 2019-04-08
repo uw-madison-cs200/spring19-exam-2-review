@@ -5,31 +5,6 @@
  **/
 public class CommandLineArguments {
 
-	/*
-	 * 0) Motivation: a) sometimes you want to run the same code with different
-	 * parameters (code length for Mastermind) -- rather than having it be in a file
-	 * you have to change, just give it as INPUT to the program! That way you can
-	 * run the EXACT SAME CODE with different parameters 
-	 * 
-	 * 1) how to GIVE them as input: 
-	 * 	a) in Eclipse 
-	 * 	b) in command line
-	 * 
-	 * 2) how to GET the input in the program 
-	 * 	a) it's put into a String array (args)
-	 * 	b) use args[i]
-	 *  c) they're strings (args[0] + args[1])
-	 * 
-	 * 3) what if you give bad input? 
-	 * 	a) wrong number 
-	 * 		i) too many? (no problem!) 
-	 * 		ii) too few? (runtime index out of bound error) 
-	 * 	b) wrong type 
-	 * 		i) runtime error
-	 * 
-	 */
-	
-
 	// ***** example 1 ****** //
 	public static void computeSumHardCoded(String[] args) { 
 
@@ -59,7 +34,7 @@ public class CommandLineArguments {
 	// ***** example 2 ****** //
 	public static void add(String[] args) {
 		
-		System.out.println(args[0] + args[1]);
+		System.out.println(args[0] + args[1]); // will this work?
 		
 	}
 	
@@ -77,7 +52,7 @@ public class CommandLineArguments {
 		// show this for eclipse + command line
 		// try with wrong number of inputs
 //		computeSumHardCoded(args);
-//		computeSumFromInput(args);
+		computeSumFromInput(args);
 		
 		// EXAMPLE 2: ???
 //		add(args);

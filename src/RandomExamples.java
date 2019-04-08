@@ -8,7 +8,6 @@ import java.util.Random;
 import java.util.Scanner;
 
 public class RandomExamples {
-
 	
 	public static void seedlessRandom(int i) {
 		
@@ -109,62 +108,52 @@ public class RandomExamples {
 	
     public static void main(String[] args) {
     	
-    	/* Comments:
-    	 * - Remember to import!
-    	 * - Lots of methods, but they'll be on the exam (don't need to memorize!)
-    	 * - How does it actually work? 
-    	 * 		- reads a sequence of "random numbers" and the sequence is determined by the seed
-    	 * 
-    	 * 
-    	 * 
-    	 */
-    	
     	// ex1: random without seeds
-    	System.out.println("ex1: Seedless random:");
-    	for (int i = 0; i < 10; i++) {
-    		seedlessRandom(i);
-    	}
-    	System.out.println();
+//    	System.out.println("ex1: Seedless random:");
+//    	for (int i = 0; i < 10; i++) {
+//    		seedlessRandom(i);
+//    	}
+//    	System.out.println();
     	
     	// ex2: random with seeds
-    	System.out.println("ex2: Random with seed 100:");
-    	int seed = 100;
-    	for (int i = 0; i < 10; i++) {
-    		seededRandom(i, seed);
-    	}
-    	System.out.println();
-    	
+//    	System.out.println("ex2: Random with seed 100:");
+//    	int seed = 100;
+//    	for (int i = 0; i < 10; i++) {
+//    		seededRandom(i, seed);
+//    	}
+//    	System.out.println();
+//    	
     	// ex3: different seeds give different random sequences
-    	System.out.println("ex3: Random with seed 50:");
-    	seed = 50;
-    	for (int i = 0; i < 10; i++) {
-    		seededRandom(i, seed);
-    	}
-    	System.out.println();
+//    	System.out.println("ex3: Random with seed 50:");
+//    	int seed = 50;
+//    	for (int i = 0; i < 10; i++) {
+//    		seededRandom(i, seed);
+//    	}
+//    	System.out.println();
     	
     	// ex4: setting the seed after creation
     	System.out.println("ex4: Random with seed set after creation:");
-    	seed = 50;
-    	for (int i = 0; i < 10; i++) {
-    		lateSeededRandom(i, seed);
-    	}
-    	System.out.println();
+//    	int seed = 50;
+//    	for (int i = 0; i < 10; i++) {
+//    		lateSeededRandom(i, seed);
+//    	}
+//    	System.out.println();
 
     	// ex5: seed sets you at a certain spot in the random sequence 
     	System.out.println("ex5: Random with seed setting you back:");
-    	seed = 50;
-    	for (int i = 0; i < 10; i++) {
-    		backSeededRandom(i, seed);
-    	}
-    	System.out.println();
+//    	int seed = 50;
+//    	for (int i = 0; i < 10; i++) {
+//    		backSeededRandom(i, seed);
+//    	}
+//    	System.out.println();
     	
     	// ex6: setSeed(seed) is the same as Random(seed) 
-    	System.out.println("ex6: rand.sedSeed(seed) does the same thing as setting the seed at initialization time:");
-    	seed = 50;
-    	for (int i = 0; i < 10; i++) {
-    		setSeedVsConstructorRandom(i, seed);
-    	}
-    	System.out.println();
+//    	System.out.println("ex6: rand.sedSeed(seed) does the same thing as setting the seed at initialization time:");
+//    	seed = 50;
+//    	for (int i = 0; i < 10; i++) {
+//    		setSeedVsConstructorRandom(i, seed);
+//    	}
+//    	System.out.println();
     	
     }
 }
