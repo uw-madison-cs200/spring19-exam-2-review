@@ -52,6 +52,7 @@ public class Method {
 
     public static void methodD(){
         int localVariable = 1;
+        // int i=0;
         for(int i = 0;i<10;i++){
             localVariable = 10;
             System.out.println("hello " + i);
