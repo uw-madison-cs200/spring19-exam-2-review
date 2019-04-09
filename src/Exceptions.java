@@ -6,6 +6,8 @@ import java.util.Scanner;
  *
  * @author Yuanfang
  */
+import java.io.FileNotFoundException;
+
 public class Exceptions {
     /*
     concepts:
@@ -18,14 +20,13 @@ public class Exceptions {
     unchecked exception,
     */
     public static void main(String[] args) {
-
+        example1("");
     }
 
-    public static void example1() {
+    public static void example1(String filename) {
         System.out.println("before of try");
         try {
             System.out.println("before method call");
-            String filename = null;
             int result = method1(filename);
             System.out.println("after method call");
         } catch (FileNotFoundException e) {
@@ -71,3 +72,4 @@ public class Exceptions {
 
 
 }
+
