@@ -51,12 +51,21 @@ public class InterestingOperators {
         int i = 0;
         i = i++;
         System.out.printf("example5: i:%d.\n", i);
+        
+        //int tmp = i;
+        //i = i + 1;
+        //i = tmp;
+
     }
 
     public static void example6(){
         int i = 0;
         i = ++i;
         System.out.printf("example6: i:%d.\n", i);
+        
+        //i = i + 1;
+        //int tmp = i;
+        //i = tmp;
     }
 
 
