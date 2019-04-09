@@ -8,7 +8,7 @@
  * @author Yuanfang
  *
  */
-public class Methods {
+public class Method {
     /*
     concepts:
     signatures
@@ -22,7 +22,8 @@ public class Methods {
     */
 
     public static void main(String[] args){
-
+        methodD();
+        // localVariable = 10;
 
     }
 
@@ -45,6 +46,15 @@ public class Methods {
 
     public int methodC(String a){
         return 0;
+    }
+
+    public static void methodD(){
+        int localVariable = 1;
+        for(int i = 0;i<10;i++){
+            localVariable = 10;
+            System.out.println("hello " + i);
+        }
+        // i = 2;
     }
 
 
