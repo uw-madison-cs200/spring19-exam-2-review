@@ -19,6 +19,7 @@ public class Method {
     parameters
     instance method
     static method
+    scope
     */
 
     public static void main(String[] args){
