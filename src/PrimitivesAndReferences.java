@@ -10,9 +10,9 @@ import java.util.Scanner;
 
 public class PrimitivesAndReferences {
     public static void main(String[] args) {
-        //primativesAndReferences();
+//        primativesAndReferences();
         //canBeNull();
-        //boxingAndUn();		
+        //boxingAndUn();
         //scannerRefs();
     }
 
@@ -34,12 +34,12 @@ public class PrimitivesAndReferences {
     // REFERENCES NULL PRIMITIVES NOT?
     public static void canBeNull() {
         // OK?
-        // word = null;
-        // letter = null;
+        // String word = null;
+        // char letter = null;
 
         // AND THEN
-        int[] ints = new int[2];
-        Integer[] integers = new Integer[2];
+        int[] ints = new int[2]; // WHAT THING IS EXPECTED IN ints[i]
+        Integer[] integers = new Integer[2]; // WHAT THING IS EXPECTED IN integers[i]
 
         for ( int i : ints ) {
             System.out.println(i);
