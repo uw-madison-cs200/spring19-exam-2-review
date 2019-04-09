@@ -24,6 +24,7 @@ public class Method {
     public static void main(String[] args){
         methodD();
         // localVariable = 10;
+        int result = methodA("str", 0, 0);
 
     }
 
